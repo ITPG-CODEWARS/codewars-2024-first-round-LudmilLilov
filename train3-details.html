@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Релсови Приключения - Luxe 300</title>
+    <link rel="icon" href="images/icon.ico" type="image/icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333F48;
+            color: white;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .train-details {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #F1C40F;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #3B6A4D;
+            text-align: center;
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #333F48;
+            color: #F1C40F;
+        }
+
+        .carousel img {
+            width: 100%;
+            display: none;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        #slide1:checked ~ .slides .slide1,
+        #slide2:checked ~ .slides .slide2 {
+            display: block;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .control {
+            background-color: #7B8A8B(255, 255, 255, 0.7);
+            border: none;
+            padding: 10px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .control:hover {
+            background-color: #2C5774;
+            color: #F1C40F;
+        }
+
+        input[type="radio"]:checked + label {
+            background-color: #3B6A4D;
+            color: #F1C40F;
+        }
+
+        p {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #3B6A4D;
+            color: #F1C40F;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #2C5774;
+            color: #FFFFFF;
+        }
+
+        .footer {
+            color: #F1C40F;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="header">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <div class="brand">Релсови Приключения</div>
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Начало</a>
+            <a href="trains.html">Влакове</a>
+            <a href="blog.html">Блог</a>
+            <a href="contact.html">Контакти</a>
+        </div>
+    </nav>
+
+    <section class="train-details">
+        <h2>Luxe 300</h2>
+
+        <div class="carousel">
+            <input type="radio" id="slide1" name="slides" checked>
+            <input type="radio" id="slide2" name="slides">
+
+            <div class="slides">
+                <img src="images/train_3.jpg" alt="Train 1" class="slide1">
+                <img src="images/train_3_2.jpg" alt="Train 2" class="slide2">
+            </div>
+
+            <div class="controls">
+                <label for="slide1" class="control">1</label>
+                <label for="slide2" class="control">2</label>
+            </div>
+        </div>
+
+        <p>Луксозният влак Luxe 300 е върхът на пътуванията с комфорт и стил. Проектиран специално за VIP пътници, той предлага незабравимо изживяване, съчетаващо лукс, иновации и безупречно обслужване. С Luxe 300, пътуването не е просто средство за придвижване, а истинско приключение.</p>
+        <p>Влакът Luxe 300 впечатлява с изискания си дизайн и вниманието към детайла. Интериорът е оформен от водещи архитекти и декоратори, които са създали атмосфера на елегантност и уют. Просторните вагони са оборудвани с удобни кресла, които се трансформират в легла, а всяка кабина разполага със собствена баня. Специално внимание е отделено на звукоизолацията, за да се гарантира спокойствието на пътниците.</p>
+        <p>Пътуването с Luxe 300 е и кулинарно изживяване. Шеф-готвачи, вдъхновени от световната гастрономия, предлагат меню с изискани ястия, приготвени от местни съставки. Пътниците могат да се насладят на гурме ястия, съпътствани от изключителни вина и коктейли, поднесени в стилна обстановка. Влаковата кухня е отворена за пътниците, които искат да наблюдават процеса на приготвяне на храната.</p>
+        <p>Обслужването в Luxe 300 е на най-високо ниво. Всеки пътник получава персонален асистент, който се грижи за всички негови нужди по време на пътуването. От организиране на екскурзии до предлагане на релаксиращи спа процедури, екипът е готов да осигури незабравимо преживяване за всеки гост.</p>
+        <p>Luxe 300 предлага разнообразие от маршрути, обхващащи най-красивите и интересни места по света. От величествени планини до живописни крайбрежия, всяко пътуване е уникално и предоставя възможности за разглеждане на забележителности и културни изживявания.</p>
+        <p>Луксозният влак Luxe 300 е символ на съвременния лукс и комфорт. Той предлага на VIP пътниците не само удобно и приятно пътуване, но и незабравими моменти на изисканост и изключително обслужване. С Luxe 300 всяко пътуване се превръща в специално изживяване, което остава в паметта за дълго.</p>
+        <a href="trains.html" class="button">Разгледай други влакове</a>
+    </section>
+
+    <footer>
+        <p class="footer">&copy; 2024 Релсови Приключения</p>
+    </footer>
+</body>
+</html>

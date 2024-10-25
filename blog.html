@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Релсови Приключения - Блог</title>
+    <link rel="icon" href="images/icon.ico" type="image/icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333F48;
+            color: #1D1F21;
+        }
+
+        .header {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin-right: 8px;
+        }
+
+        .brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #F1C40F;
+            line-height: 1;
+        }
+
+        .navbar {
+            background-color: #2C5774;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #F1C40F;
+        }
+
+        .navbar a {
+            color: #F1C40F;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #333F48;
+            color: #FFFFFF;
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .explore-button {
+            background-color: #F1C40F;
+            color: #1D1F21;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .button {
+            background-color: #3B6A4D;
+            color: #F1C40F;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .center-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+            padding: 10px;
+        }
+
+        .button:hover {
+            background-color: #2C5774;
+            color: #FFFFFF;
+        }
+
+        .blog-hero-section {
+            background-image: url('images/train_blog.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding: 100px 20px;
+            color: #F1C40F;
+            text-align: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .blog-hero-text {
+            position: relative;
+            z-index: 2;
+        }
+
+        .blog-posts {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: #7B8A8B;
+            flex-wrap: wrap;
+        }
+
+        .post {
+            background-color: #F1C40F;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            color: #1D1F21;
+            flex: 1 1 30%;
+            min-width: 250px;
+        }
+
+        .post h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .post p {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #2C5774;
+            color: #F1C40F;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="header">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <div class="brand">Релсови Приключения</div>
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Начало</a>
+            <a href="trains.html">Влакове</a>
+            <a href="blog.html">Блог</a>
+            <a href="contact.html">Контакти</a>
+        </div>
+    </nav>
+
+    <header class="blog-hero-section">
+        <div class="blog-hero-text">
+            <h1>Добре дошли в нашия блог</h1>
+            <p>Следете последните новини и статии за света на влаковете!</p>
+        </div>
+    </header>
+
+    <section class="blog-posts">
+        <div class="post">
+            <h2>Най-новите влакове за 2024 година</h2>
+            <p>
+                <ul type = "disc">
+                    <li>Shinkansen</li>
+                    <li>TGV</li> 
+                    <li>ICE</li> 
+                    <li>Eurostar</li> 
+                    <li>Acela Express</li>
+                    <li>Vivarail D-Train</li>
+                    <li>Siemens Velaro</li>
+                    <li>Frecciarossa</li>
+                    <li>Thalys </li>
+                </ul>
+            </p>
+            <p><strong>Дата:</strong> 10 януари 2024 г.</p>
+            <p><strong>Автор:</strong> Иван Иванов</p>
+        </div>
+        <div class="post">
+            <h2>История на железниците в България</h2>
+            <p>Историята на железниците в България започва през 1866 г. с изграждането на първата линия между Варна и Русе. След Освобождението през 1878 г. мрежата се разширява с важни линии, като София - Бургас и София - Варна. В социалистическия период (1944-1989) железниците преминават под държавен контрол и се модернизират, играейки ключова роля в индустриализацията на страната. След 1989 г. БДЖ преминава през реформи и инвестиции, насочени към обновление и модернизация на мрежата, продължавайки и в съвременния период с акцент на устойчивост и ефективност.</p>
+            <p><strong>Дата:</strong> 20 февруари 2024 г.</p>
+            <p><strong>Автор:</strong> Мария Георгиева</p>
+        </div>
+        <div class="post">
+            <h2>Пътуване с влак: Най-добрите маршрути</h2>
+            <p>Пътуването с влак предлага уникални преживявания, които съчетават удобство, комфорт и живописни гледки. Ето някои от най-добрите маршрути по света:
+
+            <p>    1. Норландия (Норвегия)
+                Маршрут: Осло до Берген
+                Разстояние: около 500 км
+                Този маршрут предлага спиращи дъха гледки на фиорди, планини и зелени долини. Пътуването включва преминаване през исторически мостове и тунели.
+            </p>
+                
+            <p>    2. Транссибирска железница (Русия)
+                Маршрут: Москва до Владивосток
+                Разстояние: около 9,289 км
+                Най-дългият железопътен маршрут в света, който преминава през разнообразни природни ландшафти, включително тайга, планини и езера. Пътуването отнема около 7 дни.
+            </p>
+                
+            <p>    3. Глория Рефър (САЩ)
+                Маршрут: Чикаго до Сан Франциско
+                Разстояние: около 2,400 км
+                Този маршрут е известен със своите живописни гледки на планините, реки и поля. Влакът преминава през Националния парк Йосемити.
+            </p>
+                
+            <p>    4. Панорамен маршрут (Швейцария)
+                Маршрут: Цюрих до Люцерн
+                Разстояние: около 50 км
+                Този маршрут предлага красиви гледки на Алпите и езера. Пътуването е кратко, но много живописно.
+            </p>
+                
+            <p>    5. Ориент експрес (Европа)
+                Маршрут: Париж до Истанбул
+                Разстояние: около 3,000 км
+                Класическият маршрут на Ориент експрес е известен със своето историческо значение и луксозно пътуване, преминаващо през живописни европейски и балкански градове.
+            </p>
+                
+           <p>    6. Каледонския влак (Шотландия)
+                Маршрут: Форт Уилям до Мългави
+                Разстояние: около 80 км
+                Този маршрут е известен с невероятни гледки на шотландските планини и езера, включително легендарното езеро Лох Нес.
+            </p>
+                
+           <p>    7. Долината на река Лоара (Франция)
+                Маршрут: Париж до Нант
+                Разстояние: около 380 км
+                Пътуването по този маршрут предлага великолепни гледки на замъци, лозя и живописни села по течението на река Лоара.
+            </p>
+            <p><strong>Дата:</strong> 5 март 2024 г.</p>
+            <p><strong>Автор:</strong> Петър Тодоров</p>
+        </div>
+    </section>
+
+    <section class="explore-more">
+        <div class="center-button">
+            <a href="trains.html" class="button">Разгледай влаковете</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Релсови Приключения</p>
+    </footer>
+</body>
+</html>

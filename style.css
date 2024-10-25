@@ -1,0 +1,222 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333F48;
+    color: #1D1F21;
+}
+
+.navbar {
+    background-color: #2C5774;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F1C40F;
+}
+
+.navbar a {
+    color: #F1C40F;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #333F48;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F1C40F;
+    line-height: 1;
+}
+
+.hero-section {
+    background-image: url('images/train_index.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 100px 20px;
+    color: #F1C40F;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.explore-button {
+    background-color: #F1C40F;
+    color: #1D1F21;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #2C5774;
+    color: #F1C40F;
+}
+
+.latest-trains, .all-trains {
+    background-color: #7B8A8B;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.train-card {
+    background-color: #F1C40F;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #1D1F21;
+}
+
+.train-card img {
+    width: 25%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.button {
+    background-color: #3B6A4D;
+    color: #F1C40F;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 10px;
+}
+
+.button:hover {
+    background-color: #2C5774;
+    color: #FFFFFF;
+}
+
+footer {
+    background-color: #2C5774;
+    color: #F1C40F;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .explore-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .train-card {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .train-card {
+        margin: 20px 10px;
+        max-width: 90%;
+    }
+
+    .explore-button {
+        padding: 12px 22px;
+        font-size: 15px;
+    }
+
+    .your-link-class {
+        font-size: 16px;
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (min-device-width: 1284px) and (max-device-width: 2796px) and (-webkit-min-device-pixel-ratio: 3) {
+    .hero-text h1 {
+        font-size: 2.8em;
+    }
+
+    .explore-button {
+        padding: 18px 28px;
+        font-size: 18px;
+    }
+
+    .train-card {
+        max-width: 600px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+}

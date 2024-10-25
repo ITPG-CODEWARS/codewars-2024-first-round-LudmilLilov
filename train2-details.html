@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Релсови Приключения - Green Tech</title>
+    <link rel="icon" href="images/icon.ico" type="image/icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333F48;
+            color: white;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .train-details {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #F1C40F;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #3B6A4D;
+            text-align: center;
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #333F48;
+            color: #F1C40F;
+        }
+
+        .carousel img {
+            width: 100%;
+            display: none;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        #slide1:checked ~ .slides .slide1,
+        #slide2:checked ~ .slides .slide2 {
+            display: block;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .control {
+            background-color: #7B8A8B(255, 255, 255, 0.7);
+            border: none;
+            padding: 10px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .control:hover {
+            background-color: #2C5774;
+            color: #F1C40F;
+        }
+
+        input[type="radio"]:checked + label {
+            background-color: #3B6A4D;
+            color: #F1C40F;
+        }
+
+        p {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #3B6A4D;
+            color: #F1C40F;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #2C5774;
+            color: #FFFFFF;
+        }
+
+        .footer {
+            color: #F1C40F;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="header">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <div class="brand">Релсови Приключения</div>
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Начало</a>
+            <a href="trains.html">Влакове</a>
+            <a href="blog.html">Блог</a>
+            <a href="contact.html">Контакти</a>
+        </div>
+    </nav>
+
+    <section class="train-details">
+        <h2>Green Tech</h2>
+
+        <div class="carousel">
+            <input type="radio" id="slide1" name="slides" checked>
+            <input type="radio" id="slide2" name="slides">
+
+            <div class="slides">
+                <img src="images/train_2.jpg" alt="Train 1" class="slide1">
+                <img src="images/train_2_2.jpg" alt="Train 2" class="slide2">
+            </div>
+
+            <div class="controls">
+                <label for="slide1" class="control">1</label>
+                <label for="slide2" class="control">2</label>
+            </div>
+        </div>
+
+        <p>В днешния свят, когато климатичните промени и устойчивото развитие стават все по-важни, технологиите играят ключова роля в създаването на решения, които намаляват въздействието ни върху околната среда. Един от примерите за това е развитието на екологични влакове, които не само предлагат по-ефективен и бърз транспорт, но и намаляват замърсяването и вредните емисии.</p>
+        <p>Съвременните влакове, използващи иновативни зелени технологии, са проектирани да намалят въглеродния отпечатък чрез използването на възобновяема енергия и по-ефективни енергийни системи. Един от основните фокуси на тези влакове е преминаването към електрическа енергия, добита от слънчеви панели, вятърни турбини или водородни клетки.</p>
+        <p>Чрез оптимизирани системи за регенеративно спиране, влаковете също така успяват да събират и съхраняват енергия по време на пътуването, което ги прави още по-ефективни. Някои модели дори разполагат със специални материали, които намаляват теглото на вагоните и същевременно повишават тяхната здравина, което позволява постигане на по-високи скорости с по-малко изразходвана енергия.</p>
+        <p>Тези влакове не само намаляват вредните емисии, но и допринасят за по-чиста и по-устойчива градска среда, осигурявайки алтернатива на автомобилите и самолетите за пътуване на дълги разстояния. Те са пример за това как зелени технологии могат да бъдат внедрени в нашето ежедневие и да допринесат за опазването на природата, без да компрометират комфорта и удобството на пътниците.</p>
+        <a href="trains.html" class="button">Разгледай други влакове</a>
+    </section>
+
+    <footer>
+        <p class="footer">&copy; 2024 Релсови Приключения</p>
+    </footer>
+</body>
+</html>
